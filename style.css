@@ -9,10 +9,56 @@
   overflow-x: hidden;
 }
 
-.container {
+.container-carousal {
   width: 50%;
   display: flex;
+  flex-wrap: wrap;
+  margin: 4rem auto;
   flex-direction: row;
   justify-content: center;
+  align-items: centers;
+}
+
+.carousal-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+}
+
+.carousal-images-box {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.carousal-img {
+  width: 50%;
+  border-radius: 5px;
+}
+
+.carousal-box > h1 {
+  /* width: 30%; */
+  /* text-align: center; */
+  font-weight: 500;
+  font-size: 2rem;
+  opacity: 0.8;
+}
+
+.carousal-box > p {
+  font-weight: 200;
+  font-size: 1rem;
+  opacity: 0.4;
+}
+
+.button-carousal {
+  width: 20px;
+  transition: opacity 300ms;
+}
+
+.button-carousal:hover {
+  opacity: 0.3;
+  cursor: pointer;
 }
