@@ -9,6 +9,26 @@
   overflow-x: hidden;
 }
 
+/*  nav bar section */
+.nav-bar {
+  margin: 0 auto;
+  width: 100%;
+  padding: 1rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  background-color: antiquewhite;
+  box-shadow: 0px 0px 10px gray;
+}
+
+.nav-bar > ul {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  list-style: none;
+}
+
+/*  carousal section */
 .container-carousal {
   width: 50%;
   display: flex;
@@ -24,6 +44,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: all;
+  transition-duration: 1s;
 }
 
 .carousal-images-box {
@@ -61,4 +83,8 @@
 .button-carousal:hover {
   opacity: 0.3;
   cursor: pointer;
+}
+
+.hidden {
+  display: none;
 }
